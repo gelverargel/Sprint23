@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/maincss.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="Imagen/Logo.png">
+    <title>EduMaking-CRM - Contacto Empresa</title>
+</head>
+<body>
+    <div class="cuerpoCompleto" display= "flex" justify-content= "center">
+        <header>
+            <div class="cabeza">
+                <img src="Imagen/logoEslogan1.png" >
+            </div>
+        </header>
+        <div id="menuPpal">
+            <menu-Ppal name-File = "Contactos - Empresa.html"></menu-Ppal>
+        </div>
+        <div class="contenido">
+          <div class="form">
+                
+            <div class="tab-content">
+                <br/>
+            
+                <form action="/contacto" method="post">
+
+                    <div class="card">
+                        <h5 class="card-header rounded-top d-flex justify-content-center">Empresa</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 col-sm-6 mb-3">
+                                  <label for="nit">Nit<span class="req">*</span></label>
+                                  <input type="text" name="nit" id="nit" class="form-control" required autocomplete="on" placeholder="Digite el nit"/>
+                                </div>
+                                <div class="col-12 col-sm-6 mb-3">
+                                  <label for="nombre">Nombre<span class="req">*</span></label>
+                                  <input type="text" name="nombre" id="nombre" class="form-control" required autocomplete="on" placeholder="Digite el nombre"/>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-sm-4 mb-3">
+                                    <label for="rut">Rut<span class="req">*</span></label>
+                                    <input type="text" name="rut" id="rut" class="form-control" required autocomplete="on" placeholder="Digite el rut"/>
+                                </div>
+                                <div class="col-12 col-sm-4 mb-3">
+                                    <label for="telefempresa">Teléfono<span class="req">*</span></label>
+                                    <input type="text" name="telefempresa" id="telefempresa" class="form-control" required autocomplete="on" placeholder="Digite el teléfono de la empresa"/>
+                                </div>
+                                <div class="col-12 col-sm-4 mb-3">
+                                    <label for="correoempresa">Correo<span class="req">*</span></label>
+                                    <input type="email" name="correoempresa" id="correoempresa" class="form-control" required autocomplete="on" placeholder="Digite el correo de la empresa"/>
+                                </div>
+                            </div>
+
+                            <hr> </hr>
+                            <h6>Datos del Contacto</h6>
+                            <div class="row">
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label for="nomcontacto">Nombre<span class="req">*</span></label>
+                                    <input type="text" name="nomcontacto" id="nomcontacto" class="form-control" required autocomplete="on" placeholder="Digite nombre del contacto"/>
+                                </div>
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label for="telcontacto">Teléfono<span class="req">*</span></label>
+                                    <input type="text" name="telcontacto" id="telcontacto" class="form-control" required autocomplete="on" placeholder="Digite el teléfono del conctacto"/>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col-12 col-sm-6 mb-3">
+                                  <label for="correocontacto">Correo<span class="req">*</span></label>
+                                  <input type="email" name="correocontacto" id="correocontacto" class="form-control" required autocomplete="on" placeholder="Digite el correo del conctacto"/>
+                              </div>
+                              <div class="col-12 col-sm-6 mb-3">
+                                  <label for="cargo">Cargo<span class="req">*</span></label>
+                                  <input type="text" name="cargo" id="cargo" class="form-control" required autocomplete="on" placeholder="Digite el cargo"/>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label for="pais">Pais<span class="req">*</span></label>
+                                    <select name="pais" id="pais" class="form-select" required>
+                                        <option value="">Seleccione...</option>
+                                        <option value="brasil">Brasil</option>
+                                        <option value="chile">Chile</option>
+                                        <option value="colombia">Colombia</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label for="ciudad">Ciudad<span class="req">*</span></label>
+                                    <select name="ciudad" id="ciudad" class="form-select" required>
+                                        <option value="">Seleccione...</option>
+                                        <option value="bermeja">Barrancabermeja</option>
+                                        <option value="Bogota">Bogota</option>
+                                        <option value="Brasilia">Brasilia</option>
+                                        <option value="bmanga">Bucaramanga</option>
+                                        <option value="Cali">Cali</option>
+                                        <option value="Medellin">Medellin</option>
+                                        <option value="riodejaneiro">Rio de Janeiro</option>
+                                        <option value="SantiagodeChile">Santiago de Chile</option>
+                                        <option value="Saopaulo">Sao Paulo</option>
+                                        <option value="Vina">Viña del mar</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <hr> </hr>
+                            <div class="row">
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label for="clasif">Clasificación<span class="req">*</span></label>
+                                    <select name="clasif" id="clasif" class="form-select" required>
+                                        <option value="cliente">Cliente</option>
+                                        <option value="prospecto">Prospecto</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-4 mb-3">
+                                  <label for="estado">Estado<span class="req">*</span></label>
+                                    <select name="estado" id="estado" class="form-select">
+                                        <option value="A">Activo</option>
+                                        <option value="I">Inactivo</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-sm-12 mb-3">
+                                    <label for="intereses" class="form-label">Intereses<span class="req">*</span></label>
+                                    <textarea class="form-control" id="intereses" name="intereses" rows="3" required></textarea>
+                                </div>
+                            </div>
+                        </div>   <!--a href="#" class="btn btn-primary">Crear Inscripcion</a-->
+                    </div>
+
+                    <!--hr class="mb-4"-->
+                    <div class="card">
+                      <div class="card-body">
+                          <div class="row">
+                              <div class="boton col-sm-4">
+                                <button type="submit" class="btn btn-primary">Registrar</button>
+                              </div>
+                              <div class="boton col-sm-4">
+                                <button type="submit" class="btn btn-success">Modificar</button>
+                              </div>
+                              <div class="boton col-sm-4">
+                                <button type="submit" class="btn btn-secondary">Consultar</button>
+                              </div>
+                          </div>
+                      </div> <!-- CARD-BODY cerramos clase CARD-BODY de los botones  --ANDERSON-->
+                    </div>
+                    <!--button type="submit" class="button button-block"/>Crear Inscripcion</button-->
+            
+                </form>
+                
+            </div><!-- tab-content -->
+            
+        </div> <!-- /form -->
+        </div>
+        <footer>
+            <div id="footer_wrapper">
+                <div id="footer">
+                    Copyright © 2021 <a href="#">EduMaking</a> - Design: <a href="#">Grupo 7</a>
+                </div> <!-- end of footer -->
+           </div> 
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
