@@ -73,18 +73,18 @@ create table instructores(
 );
 
 create table cursos(
-    id_curso varchar(7) not null,
+	id_curso varchar(7) not null,
     id_instructor int not null,
     nom_curso varchar(70) not null,
     contenido varchar(1000) not null,
     duracion int not null,
-    primary key (id_curso),
+	primary key (id_curso),
     constraint cursos_instructores_fk foreign key (id_instructor) references instructores (id_instructor)
 );
 
 create table inscripciones(
 	id_inscripcion int auto_increment,
-	id_curso int not null,
+	id_curso varchar(7) not null,
     id_persona int not null,
     fecha_ini date not null, 
     fecha_fin date not null,

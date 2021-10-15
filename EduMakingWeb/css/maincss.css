@@ -141,7 +141,7 @@ input:focus {
 /* end of footer */
 
 /* creado harold */
-#contenido-Inscr {
+#contenido-Inscr, #contenido-Curso {
   /*width: 800px;*/
   width: 80%;
   margin: 0px auto;
@@ -149,17 +149,23 @@ input:focus {
   /* padding-right: 0%; */
 }
 
-#card-tblInscripciones {
+#card-tblInscripciones, #card-tblCurso {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
 }
 
-#tblInscripciones {
+#tblInscripciones, #tblCursos {
   /*table-layout: fixed;*/
   width: 100%;
   border-collapse: collapse;
   border: 1px solid rgb(0, 0, 0);
 }
+
+/*#tblCursos {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgb(0, 0, 0);
+}*/
 
 /*thead th:nth-child(1) {
   width:1%;
@@ -170,23 +176,23 @@ input:focus {
 }
 
 #col2 {
-  width: 20%;
+  width: 8%;
 }
 
 #col3 {
-  width: 20%;
+  width: 12%;
 }
 
 #col4 {
-  width: 20%;
+  width: 15%;
 }
 
 #col5 {
-  width: 10%;
+  width: 8%;
 }
 
 #col6 {
-  width: 10%;
+  width: 15%;
 }
 
 #col7 {
@@ -196,6 +202,49 @@ input:focus {
 #col8 {
   width: 9%;
 }
+
+#col9 {
+  width: 13%;
+}
+
+#col10 {
+  width: 5%;
+}
+#col11 {
+  width: 4%;
+}
+
+#col1_curso {
+  width:15%;
+}
+
+#col2_curso {
+  width: 20%;
+}
+
+#col3_curso {
+  width: 10%;
+}
+
+#col4_curso {
+  width: 15%;
+}
+
+#col5_curso {
+  width: 30%;
+}
+
+#col6_curso {
+  width: 10%;
+}
+
+#col7_curso {
+  width: 5%;
+}
+
+/*#modal fade {
+  width: 100%;
+}*/
 
 /*tbody tr:hover {
   background: rgb(241, 195, 238);
