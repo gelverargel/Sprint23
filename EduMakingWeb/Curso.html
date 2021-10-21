@@ -127,6 +127,7 @@
             const MODAL_CURSO = new bootstrap.Modal(document.getElementById('modalCurso'))
 
             window.onload=function (){
+                /* Llenar tabla de cursos */
                 const CONTENEDOR = document.querySelector("tbody");
                 const FOOT = document.querySelector("tfoot");
                 let result = '';
@@ -199,7 +200,7 @@
                 document.getElementById('contenido').value = fila.children[4].innerHTML;
 
                 //window.location.href = "inscripcion-crear.html";
-                MODAL_CURSO.show()
+                MODAL_CURSO.show();
                 
             })
 
